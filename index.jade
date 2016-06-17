@@ -56,38 +56,39 @@ html(lang="en")
         row
           .col-sm-12.col-md-12.tile#services
             h1 Services
-        row.end-content
-          .col-sm-6.col-md-6
-            h1(class='title') 
-              | About 
-              br
-              | Me
-            p 
-              | I am a fullstack webdeveloper currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
-              br
-              br 
-              | I can help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
-              br
-              br 
-              | I look forward to working with you on your next project. 
-          .col-sm-6.col-md-6
-            h1(class='title') 
-              | Contact
-              br
-              | Me
-            h3 Let's work together to make a unique product. What's your idea?
-            form#contactForm(method='POST')
-              .form-group
-                //- label(for='nameInputLabel') What's your name?
-                input.form-control(type='text', name='name', placeholder='Your Name')
-              .form-group
-                //- label(for='emailInputLabel') Electronic-Mail
-                input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
-              .form-group
-                textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
-              input(type='text', name='_gotcha', style='display:none')
-              .form-group
-                button#sendMessage.btn.btn-default(type='submit') Submit
+        row
+          .end-content
+            .col-sm-6.col-md-6
+              h1(class='title') 
+                | About 
+                br
+                | Me
+              p 
+                | I am a fullstack webdeveloper currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
+                br
+                br 
+                | I can help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
+                br
+                br 
+                | I look forward to working with you on your next project. 
+            .col-sm-6.col-md-6
+              h1(class='title') 
+                | Contact
+                br
+                | Me
+              h3 Let's work together to make a unique product. What's your idea?
+              form#contactForm(method='POST')
+                .form-group
+                  //- label(for='nameInputLabel') What's your name?
+                  input.form-control(type='text', name='name', placeholder='Your Name')
+                .form-group
+                  //- label(for='emailInputLabel') Electronic-Mail
+                  input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
+                .form-group
+                  textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
+                input(type='text', name='_gotcha', style='display:none')
+                .form-group
+                  button#sendMessage.btn.btn-default(type='submit') Submit
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
       script(src="./scripts/main.js")
