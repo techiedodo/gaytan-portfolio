@@ -1,0 +1,89 @@
+$blue-green: #3EB69F
+$orange: #F9A22D
+$drk-orange: #EB6828
+
+
+#video
+  position: relative
+  width: 100vw
+  height: 100vh
+  padding: 0
+  overflow: hidden
+  // background-color: $blue-green
+  border-bottom: $orange solid 3px
+  #bgvid
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    opacity: .5
+    background:
+      image: url(./abcd.jpg) no-repeat
+      size: cover
+    z-index: -1
+  .top-links
+    margin-top: 1em
+  #hero-container
+    min-width: 90%
+    position: relative
+  #logo
+    position: relative
+    z-index: 3
+    box-sizing: border-box
+    width: 10vw
+    border: solid white 2px
+    padding: 1.1em 0
+    background-color: transparent
+    box-shadow: 0px 0px 15px 2px $orange
+    img
+      position: relative
+      width: 6vw
+      padding-bottom: .5em
+    p
+      color: $drk-orange
+      font-family: 'Alegreya Sans SC', sans-serif
+      font-size: 1.5em
+      margin: 0
+      line-height: .8em
+      text-shadow: 1px 1px 0 black
+  #social-media
+    z-index: 3
+    img
+      box-sizing: border-box
+      position: relative
+      top: 15px
+      opacity: .9
+      height: 3.5em
+      margin: 2px 5px
+      transition: transform .2s ease
+      &:hover
+        transform: scale(1.3)
+  .hero-content
+    position: relative
+    z-index: 2
+    color: white
+    font-family: 'Alegreya Sans SC', sans-serif
+    top: 17vh
+    h1
+      font-size: 4em
+    .fa
+      padding-top: 4px
+      padding-left: 14px
+#content-container
+  background-color: white
+  padding: 0
+  .title
+    font-size: 1.2em
+    color: gray
+    text-transform: uppercase
+  .tile
+    min-height: 17em
+    border: black 1px solid
+  #services
+    margin: 0
+    background-color: $drk-orange
+    color: white
