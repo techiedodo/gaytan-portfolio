@@ -1,66 +1,93 @@
 //output:index.html
-<!DOCTYPE html>
+doctype html
 html(lang="en")
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  // break
-  title Luis Gaytan | Lead Dodo
-  // break
-  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous')
-  link(rel='stylesheet' href='./styles/styles.min.css')
-  link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Jura:300|Oxygen:300|Philosopher|Roboto:100" rel="stylesheet")
-  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
-  // break
-body
-  .container-fluid.video-cont#video
-    video(autoplay loop poster='./Coding.jpg' id='bgvid')
-      source(src='./assets/videos/Coding.webm')
-      source(src='./assets/videos/Coding.mp4')
-      source(src='./assets/videos/Coding.ogv')
-    .container#hero-container
-      .row.top-links
-        .col-xs-3.col-sm-3.col-md-3#logo
-          p.text-center
-            img(src='./assets/images/dodo.png' alt='Techie Dodo')
-            br
-            | Techie 
-            br
-            | Dodo
-        .col-xs-9.col-sm-9.col-md-9.pull-right#social-media
-          a(href='#' class='pull-right'): img(src='./assets/images/Github.png')
-          //- a(href='#'): img(src='./assets/images/Facebook.png')
-          a(href='#' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
-          a(href='#' class='pull-right'): img(src='./assets/images/Medium.png')
-          a(href='#' class='pull-right'): img(src='./assets/images/LinkedIn.png')
-      .row.hero-content
-        .col-sm-12.col-md-7.col-lg-7
-          h1 I create and build digital products people will enjoy using.
-          hr
-          h2 
-            | Learn from the Dodo. Be adaptable. I can show you how. 
-            em Let's Talk
-            i.fa.fa-arrow-circle-right(aria-hidden='true')
-  .container-fluid#content-container
-    row
-      .col-sm-6.col-md-6.tile#study
-        h1 Case Study
-      .col-sm-3.col-md-3.tile#projects
-        h1 Projects
-      .col-sm-3.col-md-3.tile#spotlight
-        h1 Spotlight
-    row
-      .col-md-12.tile#services
-        h1 Services
-    row
-      .col-sm-6.col-md-6.tile
-        h1(class='title') About Me
-        p I am a fullstack webdeveloper currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
-        p I can help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
-        p I look forward to working with you on your next project. 
-      .col-sm-6.col-md-6.tile
-        h1(class='title') Contact Me
-  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
-  script(src="./scripts/main.js")
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    // break
+    title Luis Gaytan | Lead Dodo
+    // break
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous')
+    link(rel='stylesheet' href='./styles/styles.min.css')
+    link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Jura:300|Oxygen:300|Philosopher|Roboto:100" rel="stylesheet")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+    // break
+  body
+    .container-fluid.video-cont#video
+        video(autoplay loop poster='./Coding.jpg' id='bgvid')
+          source(src='./assets/videos/Coding.webm')
+          source(src='./assets/videos/Coding.mp4')
+          source(src='./assets/videos/Coding.ogv')
+        .container#hero-container
+          .row.top-links
+            .col-xs-3.col-sm-3.col-md-3#logo
+              p.text-center
+                img(src='./assets/images/dodo.png' alt='Techie Dodo')
+                br
+                | Techie 
+                br
+                | Dodo
+            .col-xs-9.col-sm-9.col-md-9.pull-right#social-media
+              a(href='#' class='pull-right'): img(src='./assets/images/Github.png')
+              //- a(href='#'): img(src='./assets/images/Facebook.png')
+              a(href='#' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
+              a(href='#' class='pull-right'): img(src='./assets/images/Medium.png')
+              a(href='#' class='pull-right'): img(src='./assets/images/LinkedIn.png')
+          .row.hero-content
+            .col-sm-12.col-md-7.col-lg-7
+              h1 I create and build digital products people will enjoy using.
+              hr
+              h2 
+                | Learn from the Dodo. Be adaptable. I can show you how. 
+                em Let's Talk
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+      .container-fluid#content-container
+        row
+          .col-sm-6.col-md-6.tile#study
+            h1 Case Study
+          .col-sm-3.col-md-3.tile#projects
+            h1 Projects
+          .col-sm-3.col-md-3.tile#spotlight
+            h1 Spotlight
+        row#hidden
+          .col-sm-12.col-md-12
+            h1 Case study Overview
+        row
+          .col-sm-12.col-md-12.tile#services
+            h1 Services
+        row.end-content
+          .col-sm-6.col-md-6
+            h1(class='title') 
+              | About 
+              br
+              | Me
+            p 
+              | I am a fullstack webdeveloper currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
+              br
+              br 
+              | I can help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
+              br
+              br 
+              | I look forward to working with you on your next project. 
+          .col-sm-6.col-md-6
+            h1(class='title') 
+              | Contact
+              br
+              | Me
+            h3 Let's work together to make a unique product. What's your idea?
+            form#contactForm(method='POST')
+              .form-group
+                //- label(for='nameInputLabel') What's your name?
+                input.form-control(type='text', name='name', placeholder='Your Name')
+              .form-group
+                //- label(for='emailInputLabel') Electronic-Mail
+                input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
+              .form-group
+                textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
+              input(type='text', name='_gotcha', style='display:none')
+              .form-group
+                button#sendMessage.btn.btn-default(type='submit') Submit
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+      script(src="./scripts/main.js")
