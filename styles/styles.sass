@@ -112,3 +112,44 @@ $blue: #6692B4
       z-index: 3
     .form-control
       background-color: transparent
+
+@media screen and (max-height: 500px)
+  #social-media
+    position: absolute
+    transform: scale(.75)
+    left: 10%
+  #video
+    .hero-content
+      h1
+        font-size: 2.25em
+      h2
+        font-size: 1.25em
+@media screen and (max-width: 500px)
+  #social-media
+    padding: 0
+    left: -50%
+    transform: scale(.75) translateX(50%)
+    img
+      opacity: 1
+  #video
+    .hero-content
+      h1
+        font-size: 2.25em
+      h2
+        font-size: 1.25em
+
+@media screen and (max-width: 415px)
+  #video
+    #logo
+      width: 6em
+      left: 50%
+      transform: translateX(-50%)
+      img
+        width: 3em
+
+
+@media screen and (min-width: 1050px)
+  #content-container
+    .end-content
+      .title
+        font-size: 8em
