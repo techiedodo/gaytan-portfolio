@@ -92,8 +92,10 @@ $blue: #6692B4
   .end-content
     position: relative
     z-index: 3
+    padding-left: 2em
+    padding-right: 2em
+    padding-top: 1em
     .title
-      box-sizing: border-box
       position: absolute
       top: 45%
       left: 50%
@@ -103,15 +105,19 @@ $blue: #6692B4
       text-transform: uppercase
       margin: 0
       z-index: -1
+    #About
+      top: 47%
     p
       position: relative
-      padding: 3em 2em
+      padding: 3em 0em
       font-size: 1.1em
     #contactForm
       position: relative
       z-index: 3
     .form-control
       background-color: transparent
+  footer
+    padding: 1em 2em
 
 @media screen and (max-height: 500px)
   #social-media
@@ -124,6 +130,29 @@ $blue: #6692B4
         font-size: 2.25em
       h2
         font-size: 1.25em
+
+@media screen and (max-width: 321px)
+  #video
+    #social-media
+      left: -40%
+    .hero-content
+      top: 100%
+      // margin: 0
+  #content-container
+    .end-content
+      .title
+        font-size: 4em
+
+
+@media screen and (max-width: 415px)
+  #video
+    #logo
+      width: 6em
+      left: 50%
+      transform: translateX(-50%)
+      img
+        width: 3em
+
 @media screen and (max-width: 500px)
   #social-media
     padding: 0
@@ -137,16 +166,12 @@ $blue: #6692B4
         font-size: 2.25em
       h2
         font-size: 1.25em
+      margin: 0
 
-@media screen and (max-width: 415px)
+@media screen and (max-width: 737px)
   #video
     #logo
-      width: 6em
-      left: 50%
-      transform: translateX(-50%)
-      img
-        width: 3em
-
+      margin-left: 1em
 
 @media screen and (min-width: 1050px)
   #content-container

@@ -59,11 +59,11 @@ html(lang="en")
         row
           .end-content
             .col-sm-6.col-md-6
-              h1(class='title') 
+              h1(class='title' id='About') 
                 | About 
                 br
                 | Me
-              p 
+              p(class='text-justify') 
                 | I am a fullstack webdeveloper currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
                 br
                 br 
@@ -89,6 +89,9 @@ html(lang="en")
                 input(type='text', name='_gotcha', style='display:none')
                 .form-group
                   button#sendMessage.btn.btn-default(type='submit') Submit
+        row
+          footer
+            p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
       script(src="./scripts/main.js")
