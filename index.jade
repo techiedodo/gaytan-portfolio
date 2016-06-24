@@ -15,26 +15,27 @@ html(lang="en")
     // break
   body
     .container-fluid#main-container
-      .container-fluid.video-cont#video
-        video(autoplay loop poster='./Coding.jpg' id='bgvid')
-          source(src='./assets/videos/Coding.webm')
-          source(src='./assets/videos/Coding.mp4')
-          source(src='./assets/videos/Coding.ogv')
-        .container-fluid#hero-container
-        .row.top-links
-          .col-xs-12.col-sm-3.col-md-3#logo
-            p.text-center
-              img(src='./assets/images/dodo.png' alt='Techie Dodo')
-              br
-              | Techie 
-              br
-              | Dodo
-          .col-xs-12.col-sm-9.col-md-9.pull-right#social-media
-            a(href='#' class='pull-right'): img(src='./assets/images/Github.png')
-            //- a(href='#'): img(src='./assets/images/Facebook.png')
-            a(href='#' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
-            a(href='#' class='pull-right'): img(src='./assets/images/Medium.png')
-            a(href='#' class='pull-right'): img(src='./assets/images/LinkedIn.png')
+      .container-fluid#hero-section
+        #video
+          video(autoplay loop poster='./Coding.jpg' id='bgvid')
+            source(src='./assets/videos/Coding.webm')
+            source(src='./assets/videos/Coding.mp4')
+            source(src='./assets/videos/Coding.ogv')
+          .row#header-rows
+            .top-links
+              .col-xs-12.col-sm-3.col-md-3.col-lg-3#logo-sect
+                p.pull-left.text-center#logo
+                  img(src='./assets/images/dodo.png' alt='Techie Dodo')
+                  br
+                  | Techie 
+                  br
+                  | Dodo
+              .col-xs-12.col-sm-9.col-md-9.col-lg-9.pull-right#social-media
+                a(href='#' class='pull-right'): img(src='./assets/images/Github.png')
+                //- a(href='#'): img(src='./assets/images/Facebook.png')
+                a(href='#' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
+                a(href='#' class='pull-right'): img(src='./assets/images/Medium.png')
+                a(href='#' class='pull-right'): img(src='./assets/images/LinkedIn.png')
           .row.hero-content
             .col-sm-12.col-md-7.col-lg-7
               h1 I create and build digital products people will enjoy using.
@@ -43,6 +44,7 @@ html(lang="en")
                 | Learn from the Dodo. Be adaptable. I can show you how. 
                 em Let's Talk
                 i.fa.fa-arrow-circle-right(aria-hidden='true')
+
       .container-fluid#content-container
         row
           .col-sm-6.col-md-6.tile#study
@@ -92,6 +94,6 @@ html(lang="en")
                   button#sendMessage.btn.btn-default(type='submit') Submit
       footer
         p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
-      script(src="./scripts/main.js")
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+  script(src="./scripts/main.js")

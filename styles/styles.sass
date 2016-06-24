@@ -5,8 +5,12 @@ $blue: #6692B4
 
 #hidden
   display: none
-#main-container
+
+.container-fluid
   padding: 0
+#header-rows
+  margin: 0
+
 #video
   position: relative
   width: 100vw
@@ -31,22 +35,11 @@ $blue: #6692B4
     z-index: -10
   .top-links
     margin-top: 1em
-  #hero-container
-    min-width: 90%
-    position: relative
-  #logo
-    position: relative
-    z-index: 3
-    box-sizing: border-box
-    width: 10vw
-    border: solid white 2px
-    padding: 1.1em 0
-    background-color: transparent
-    box-shadow: 0px 0px 15px 2px $drk-orange
-    img
-      position: relative
-      width: 6vw
-      padding-bottom: .5em
+    #logo
+      border: solid white 2px
+      padding: .7em .5em
+      background-color: transparent
+      box-shadow: 0px 0px 15px 2px $drk-orange
     p
       color: $drk-orange
       font-family: 'Alegreya Sans SC', sans-serif
@@ -71,9 +64,14 @@ $blue: #6692B4
     z-index: 2
     color: white
     font-family: 'Alegreya Sans SC', sans-serif
-    top: 33vh
+    top: 35vh
+    margin-left: .1em
     h1
       font-size: 4em
+      line-height: .75em
+      transition: font-size .7s ease
+    h2
+      transition: font-size .7s ease
     .fa
       padding-top: 4px
       padding-left: 14px
@@ -107,7 +105,7 @@ $blue: #6692B4
       margin: 0
       z-index: -1
     #About
-      top: 47%
+      top: 49.5%
     p
       position: relative
       padding: 3em 0em
@@ -124,25 +122,22 @@ footer
   color: white
 
 @media screen and (max-height: 500px)
-  #social-media
-    position: absolute
-    transform: scale(.75)
-    left: 10%
   #video
     .hero-content
+      top: 45vh
       h1
         font-size: 2.25em
       h2
         font-size: 1.25em
 
-@media screen and (max-width: 321px)
+@media screen and (min-width: 501px) and (max-width: 737px)
   #video
+    .top-links
+      margin-top: .5em
+    #logo
+      transform: scale(.8)
     #social-media
-      left: -40%
-  #content-container
-    .end-content
-      .title
-        font-size: 4em
+      position: absolute
 
 @media screen and (max-width: 500px)
   #social-media
@@ -160,16 +155,20 @@ footer
         font-size: 1.25em
       margin: 0
     #logo
+      position: relative
       width: 6em
       left: 50%
       transform: translateX(-50%)
       img
         width: 3em
 
-@media screen and (max-width: 737px)
-  #video
-    #logo
-      margin-left: 1em
+@media screen and (max-width: 321px)
+  #social-media
+    left: -45%
+  #content-container
+    .end-content
+      .title
+        font-size: 4em
 
 @media screen and (min-width: 1050px)
   #content-container
