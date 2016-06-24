@@ -5,7 +5,8 @@ $blue: #6692B4
 
 #hidden
   display: none
-
+#main-container
+  padding: 0
 #video
   position: relative
   width: 100vw
@@ -116,8 +117,11 @@ $blue: #6692B4
       z-index: 3
     .form-control
       background-color: transparent
-  footer
-    padding: 1em 2em
+footer
+  padding: 1em 2em
+  background-color: $orange
+  font-family: 'Alegreya Sans SC', sans-serif
+  color: white
 
 @media screen and (max-height: 500px)
   #social-media
@@ -135,23 +139,10 @@ $blue: #6692B4
   #video
     #social-media
       left: -40%
-    .hero-content
-      top: 100%
-      // margin: 0
   #content-container
     .end-content
       .title
         font-size: 4em
-
-
-@media screen and (max-width: 415px)
-  #video
-    #logo
-      width: 6em
-      left: 50%
-      transform: translateX(-50%)
-      img
-        width: 3em
 
 @media screen and (max-width: 500px)
   #social-media
@@ -162,11 +153,18 @@ $blue: #6692B4
       opacity: 1
   #video
     .hero-content
+      top: 40vh
       h1
         font-size: 2.25em
       h2
         font-size: 1.25em
       margin: 0
+    #logo
+      width: 6em
+      left: 50%
+      transform: translateX(-50%)
+      img
+        width: 3em
 
 @media screen and (max-width: 737px)
   #video

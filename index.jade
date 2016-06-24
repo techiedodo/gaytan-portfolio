@@ -14,7 +14,8 @@ html(lang="en")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
     // break
   body
-    .container-fluid.video-cont#video
+    .container-fluid#main-container
+      .container-fluid.video-cont#video
         video(autoplay loop poster='./Coding.jpg' id='bgvid')
           source(src='./assets/videos/Coding.webm')
           source(src='./assets/videos/Coding.mp4')
@@ -72,7 +73,7 @@ html(lang="en")
                 br 
                 | I look forward to working with you on your next project. 
             .col-sm-6.col-md-6
-              h1(class='title') 
+              h1(class='title' id='contact') 
                 | Contact
                 br
                 | Me
@@ -89,9 +90,8 @@ html(lang="en")
                 input(type='text', name='_gotcha', style='display:none')
                 .form-group
                   button#sendMessage.btn.btn-default(type='submit') Submit
-        row
-          footer
-            p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
+      footer
+        p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
       script(src="./scripts/main.js")
