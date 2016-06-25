@@ -46,20 +46,35 @@ html(lang="en")
                 i.fa.fa-arrow-circle-right(aria-hidden='true')
 
       .container-fluid#content-container
-        row
+        .row.content-rows
           .col-sm-6.col-md-6.tile#study
             h1 Case Study
           .col-sm-3.col-md-3.tile#projects
             h1 Projects
           .col-sm-3.col-md-3.tile#spotlight
             h1 Spotlight
-        row#hidden
+        .row#hidden
           .col-sm-12.col-md-12
             h1 Case study Overview
-        row
+        .row.content-rows
           .col-sm-12.col-md-12.tile#services
-            h1 Services
-        row
+            h2 Helping you Soar
+            .col-md-4.services-section
+              p(class='text-justify lead')
+                //- i.fa.fa-code.fa-3x
+                span(class='lead-word') Fullstack 
+                | &mdash; As a fullstack developer, I have the toolset to help you create something customized and unique for your business.
+            .col-md-4.services-section
+              p(class='text-justify lead')
+                //- i.fa.fa-map.fa-3x
+                span(class='lead-word') Develop 
+                | &mdash; Whether you are looking to give your website a small facelift, a total gut job, or are looking to develop a new web application, I am here to help you bring your idea into fruition. 
+            .col-md-4.services-section
+              p(class='text-justify lead')
+                //- i.fa.fa-rocket.fa-3x 
+                span(class='lead-word') Launch 
+                | &mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.
+        .row
           .end-content
             .col-sm-6.col-md-6
               h1(class='title' id='About') 
