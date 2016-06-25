@@ -1,11 +1,12 @@
-$blue-green: #3EB69F
-$orange: #F9A22D
-$drk-orange: #EB6828
+$purple: #444499
+$green: #76C947
 $blue: #6692B4
 
 #hidden
   display: none
-
+.row
+  margin-left: 0
+  margin-right: 0
 .container-fluid
   padding: 0
 #header-rows
@@ -17,8 +18,7 @@ $blue: #6692B4
   height: 100vh
   padding: 0
   overflow: hidden
-  // background-color: $blue-green
-  border-bottom: $orange solid 3px
+  border-bottom: $purple solid 3px
   #bgvid
     position: fixed
     top: 50%
@@ -30,18 +30,18 @@ $blue: #6692B4
     height: auto
     opacity: .5
     background:
-      image: url(./abcd.jpg) no-repeat
+      image: url('../Coding.jpg') no-repeat
       size: cover
     z-index: -10
   .top-links
     margin-top: 1em
     #logo
-      border: solid white 2px
+      border: solid white .25em
       padding: .7em .5em
       background-color: transparent
-      box-shadow: 0px 0px 15px 2px $drk-orange
+      box-shadow: 0px 0px 10px 1px $green
     p
-      color: $drk-orange
+      color: $green
       font-family: 'Alegreya Sans SC', sans-serif
       font-size: 1.5em
       margin: 0
@@ -79,21 +79,56 @@ $blue: #6692B4
   background-color: white
   padding: 0
   color: $blue
+  .content-rows
+
   .tile
     min-height: 20em
     font-family: 'Oxygen', sans-serif
   #projects
-    background-color: $orange
+    background-color: $purple
+  .tile#services
+    padding-top: 2.5em
+    padding-bottom: 4.5em
   #services
     margin: 0
-    background-color: $blue-green
+    border-top: 2px solid $green
+    background:
+      image: linear-gradient(to top right, rgba(0, 25, 128, 0.5), rgba(128, 25, 0, 0.75)), linear-gradient(rgba(0, 0, 255, 0.25) 100%, transparent), url('../assets/images/code-image.png')
+      position: bottom center
     color: white
+    position: relative
+    z-index: 3
+    box-shadow: 0px 8px 10px gray
+    h2, p
+      position: relative
+      z-index: 5
+    p
+      opacity: 0
+      transform: translateY(-20px)
+      transition: all 0.3s ease-in-out
+      &.is-showing
+        opacity: 1
+        transform: translateY(0px)
+    i
+      position: absolute
+      color: transparentize($green, .5)
+      z-index: -1
+      left: 50%
+      transform: scale(1.8) translateX(-50%)
+      top: .65em
+      text-shadow: 1px 3px 3px transparentize(black, .8)
+    .lead
+      padding-left: .5em
+      padding-right: .5em
+      .lead-word
+        color: $green
   .end-content
     position: relative
     z-index: 3
     padding-left: 2em
     padding-right: 2em
-    padding-top: 1em
+    padding-top: 2em
+    min-height: 27em
     .title
       position: absolute
       top: 45%
@@ -117,9 +152,10 @@ $blue: #6692B4
       background-color: transparent
 footer
   padding: 1em 2em
-  background-color: $orange
+  background-color: $purple
   font-family: 'Alegreya Sans SC', sans-serif
-  color: white
+  color: $green
+  border-top: 2px solid $green
 
 @media screen and (max-height: 500px)
   #video
