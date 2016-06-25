@@ -1,17 +1,17 @@
-// $(document).ready(function(){
-//    $("a").hover(function() {
-//       console.log($(this).id);
-//       $(this).find("img").attr("src","./assets/images/LinkedIn-hover.png");},
-//       function() {
-//         $(this).find("img").attr("src","./assets/images/"+this.id+".png");
-// 		});
-// });
 $(document).ready(function(){
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     $('.hero-content').css({
       'transform' : 'translateX('+ wScroll /6+'%)'
     });
+
+    if(wScroll > $('.top-row').offset().top - ($(window).height() / 2.5) ) {
+      $('.services-section p').each(function(i){
+        setTimeout(function(){
+          $('.services-section p').eq(i).addClass('is-showing');
+        }, 350 * (i+1));
+      });
+    };
   });
 
   var message = "";
