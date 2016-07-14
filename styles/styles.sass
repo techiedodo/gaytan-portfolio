@@ -2,6 +2,12 @@ $purple: #444499
 $green: #76C947
 $blue: #6692B4
 
+.align-center
+  position: relative
+  left: 50%
+  transform: translateX(-50%)
+
+
 #hidden
   display: none
 .row
@@ -11,7 +17,9 @@ $blue: #6692B4
   padding: 0
 #header-rows
   margin: 0
-
+.wrapper
+  max-width: 87vw
+  margin: 0 auto
 #video
   position: relative
   width: 100vw
@@ -79,18 +87,51 @@ $blue: #6692B4
   background-color: white
   padding: 0
   color: $blue
+  .top-row
+    .tile
+      padding-top: 2em
+      padding-bottom: 3.5em
+      min-height: 28em
   .content-rows
 
+  #spotlight
+    overflow: hidden
+    .primary-content
+      position: relative
+      transform: translate3d(0,0,0)
+      transition: all .75s ease-out
+      img
+        width: 90%
+    &:hover .primary-content
+      transform: translate3d(-150%, 0, 0)
+      transition: all .75s ease-out
+    .secondary-content
+      position: absolute
+      padding: 1.5em 1.5em
+      transform: translate3d(0,300%,0)
+      transition: all .75s ease-out
+    &:hover .secondary-content
+      transform: translate3d(0, -18em, 0)
+      transition: all .75s ease-out
+    h3
+      margin-top: 0
+      margin-bottom: .2em
+    #gametree
+      border-radius: 5px
+      border: 1px solid black
+      &:hover
+
   .tile
-    min-height: 20em
     font-family: 'Oxygen', sans-serif
   #projects
     background-color: $purple
-  .tile#services
-    padding-top: 2.5em
-    padding-bottom: 4.5em
+  // .tile#services
+  //   padding-top: 2.5em
+  //   padding-bottom: 4.5em
   #services
     margin: 0
+    padding-top: 1.75em
+    padding-bottom: 3.25em
     border-top: 2px solid $green
     background:
       image: linear-gradient(to top right, rgba(0, 25, 128, 0.5), rgba(128, 25, 0, 0.75)), linear-gradient(rgba(0, 0, 255, 0.25) 100%, transparent), url('../assets/images/code-image.png')
@@ -106,22 +147,20 @@ $blue: #6692B4
       opacity: 0
       transform: translateY(-20px)
       transition: all 0.3s ease-in-out
+      position: relative
+      z-index: 3
       &.is-showing
         opacity: 1
         transform: translateY(0px)
-    i
-      position: absolute
-      color: transparentize($green, .5)
-      z-index: -1
-      left: 50%
-      transform: scale(1.8) translateX(-50%)
-      top: .65em
-      text-shadow: 1px 3px 3px transparentize(black, .8)
+      .service-imgs
+        width: 6em
+        padding: 1.5em 1.5em .5em 0em
     .lead
-      padding-left: .5em
-      padding-right: .5em
+      padding-left: 1.5em
+      padding-right: 1.5em
       .lead-word
         color: $green
+        font-size: 140%
   .end-content
     position: relative
     z-index: 3
@@ -211,3 +250,16 @@ footer
     .end-content
       .title
         font-size: 8em
+
+@media screen and (min-width: 1400px)
+  #content-container .top-row
+    .tile
+      min-height: 33.2em
+    .secondary-content
+      h3
+        font-size: 2em
+      p
+        font-size: 1.2em
+    #spotlight
+      &:hover .secondary-content
+        transform: translate3d(0, -24em, 0)
