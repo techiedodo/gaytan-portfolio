@@ -21,92 +21,111 @@ html(lang="en")
             source(src='./assets/videos/Coding.webm')
             source(src='./assets/videos/Coding.mp4')
             source(src='./assets/videos/Coding.ogv')
-          .row#header-rows
-            .top-links
-              .col-xs-12.col-sm-3.col-md-3.col-lg-3#logo-sect
-                p.pull-left.text-center#logo
-                  img(src='./assets/images/dodo.png' alt='Techie Dodo')
-                  br
-                  | Techie 
-                  br
-                  | Dodo
-              .col-xs-12.col-sm-9.col-md-9.col-lg-9.pull-right#social-media
-                a(href='#' class='pull-right'): img(src='./assets/images/Github.png')
-                //- a(href='#'): img(src='./assets/images/Facebook.png')
-                a(href='#' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
-                a(href='#' class='pull-right'): img(src='./assets/images/Medium.png')
-                a(href='#' class='pull-right'): img(src='./assets/images/LinkedIn.png')
-          .row.hero-content
-            .col-sm-12.col-md-7.col-lg-7
-              h1 I create and build digital products people will enjoy using.
-              hr
-              h2 
-                | Learn from the Dodo. Be adaptable. I can show you how. 
-                em Let's Talk
-                i.fa.fa-arrow-circle-right(aria-hidden='true')
+          .wrapper
+            .row#header-rows
+              .top-links
+                .col-xs-12.col-sm-3.col-md-3.col-lg-3#logo-sect
+                  p.pull-left.text-center#logo
+                    img(src='./assets/images/dodo.png' alt='Techie Dodo')
+                    br
+                    | Techie 
+                    br
+                    | Dodo
+                .col-xs-12.col-sm-9.col-md-9.col-lg-9.pull-right#social-media
+                  a(href='https://github.com/techiedodo' class='pull-right'): img(src='./assets/images/Github.png')
+                  //- a(href='#'): img(src='./assets/images/Facebook.png')
+                  a(href='https://mobile.twitter.com/TechieDodo' class='pull-right Twitter'): img(src='./assets/images/Twitter.png')
+                  a(href='https://medium.com/@luisgaytan' class='pull-right'): img(src='./assets/images/Medium.png')
+                  a(href='https://www.linkedin.com/in/luisgaytan' class='pull-right'): img(src='./assets/images/LinkedIn.png')
+            .row.hero-content
+              .col-sm-12.col-md-7.col-lg-7
+                h1 I create and build digital products people will enjoy using.
+                hr
+                h2 
+                  | Learn from the Dodo. Be adaptable. I can show you how. 
+                  em Let's Talk
+                  a(href='#contact')
+                    i.fa.fa-arrow-circle-right(aria-hidden='true')
 
       .container-fluid#content-container
-        .row.content-rows.top-row
-          .col-sm-6.col-md-6.tile#study
+        .row.content-rows.top-row.wrapper
+          .col-sm-5.col-md-5.tile#study
             h1 Case Study
           .col-sm-3.col-md-3.tile#projects
             h1 Projects
-          .col-sm-3.col-md-3.tile#spotlight
-            h1 Spotlight
+          .col-sm-4.col-md-4.tile#spotlight
+            .primary-content.text-center
+              h2 Project Spotlight
+              img(src='./assets/images/Gametree.png' id='gametree')
+              h4 Gametree.me &mdash; Discover Your Tribe
+            .secondary-content
+              h3 A Gamer Network for the Masses
+              p.text-justify Gametree.me is a social network offering amazingly personal recommendations for games, friends, news, and events. We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.
+              br 
+              p Learn more &mdash; find your tribe.
         .row#hidden
           .col-sm-12.col-md-12
             h1 Case study Overview
-        .row.content-rows
-          .col-sm-12.col-md-12.tile#services
-            h2 Helping you Soar
-            .col-md-4.services-section
-              p(class='text-justify lead')
-                //- i.fa.fa-code.fa-3x
-                span(class='lead-word') Fullstack 
-                | &mdash; As a fullstack developer, I have the toolset to help you create something customized and unique for your business.
-            .col-md-4.services-section
-              p(class='text-justify lead')
-                //- i.fa.fa-map.fa-3x
-                span(class='lead-word') Develop 
-                | &mdash; Whether you are looking to give your website a small facelift, a total gut job, or are looking to develop a new web application, I am here to help you bring your idea into fruition. 
-            .col-md-4.services-section
-              p(class='text-justify lead')
-                //- i.fa.fa-rocket.fa-3x 
-                span(class='lead-word') Launch 
-                | &mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.
+        .row.content-rows#services
+          .wrapper
+            .col-sm-12.col-md-12.tile
+              h2 Helping you Soar
+              .col-md-4.services-section
+                p(class='text-justify lead')
+                  img(src='./assets/images/Full-Stack.png' class='service-imgs')
+                  span(class='lead-word') Fullstack 
+                  br
+                  | &mdash; As a fullstack developer, I have the toolset to help you create something customized and unique for your business.
+                  
+              .col-md-4.services-section
+                p(class='text-justify lead')
+                  img(src='./assets/images/Develop.png' class='service-imgs')
+                  span(class='lead-word') Develop
+                  br 
+                  | &mdash; Whether you are looking to give your website a small facelift, a total gut job, or are looking to develop a new web application, I am here to help you bring your idea into fruition.
+                  
+              .col-md-4.services-section
+                p(class='text-justify lead')
+                  img(src='./assets/images/Rocket.png' class='service-imgs')
+                  span(class='lead-word') Launch
+                  br 
+                  | &mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.
+                  //- img(src='./assets/images/Rocket.png' class='services-img')
         .row
-          .end-content
-            .col-sm-6.col-md-6
-              h1(class='title' id='About') 
-                | About 
-                br
-                | Me
-              p(class='text-justify') 
-                | My name is Luis Gaytan. I am a fullstack web developer currently based in Southern California. I take pride in developing and creating innovative, highly functional products that will solve your techinal needs.
-                br
-                br 
-                | I can help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
-                br
-                br 
-                | I look forward to working with you on your next project. 
-            .col-sm-6.col-md-6
-              h1(class='title' id='contact') 
-                | Contact
-                br
-                | Me
-              h3 Let's work together to make a unique product. What's your idea?
-              form#contactForm(method='POST')
-                .form-group
-                  //- label(for='nameInputLabel') What's your name?
-                  input.form-control(type='text', name='name', placeholder='Your Name')
-                .form-group
-                  //- label(for='emailInputLabel') Electronic-Mail
-                  input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
-                .form-group
-                  textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
-                input(type='text', name='_gotcha', style='display:none')
-                .form-group
-                  button#sendMessage.btn.btn-default(type='submit') Submit
+          .wrapper
+            .end-content
+              .col-sm-6.col-md-6
+                h1(class='title text-center' id='About') 
+                  | About 
+                  br
+                  | Me
+                p(class='text-justify') 
+                  | My name is Luis Gaytan. I am a fullstack web developer currently based in Southern California. I take pride in developing innovative and highly functional products that will solve your techinal needs.
+                  br
+                  br 
+                  | I will help you revamp your current product or help you create something completely new. With all of the emerging technologies, it is always wise to adapt and become a Techie Dodo.
+                  br
+                  br 
+                  | I look forward to bringing your next project to life. 
+              .col-sm-6.col-md-6
+                a(name='contact')
+                h1(class='title text-center' id='contact') 
+                  | Contact
+                  br
+                  | Me
+                h3 Let's work together to make a unique product. What's your idea?
+                form#contactForm(method='POST')
+                  .form-group
+                    //- label(for='nameInputLabel') What's your name?
+                    input.form-control(type='text', name='name', placeholder='Your Name')
+                  .form-group
+                    //- label(for='emailInputLabel') Electronic-Mail
+                    input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
+                  .form-group
+                    textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
+                  input(type='text', name='_gotcha', style='display:none')
+                  .form-group
+                    button#sendMessage.btn.btn-default(type='submit') Submit
       footer
         p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
