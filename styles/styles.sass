@@ -95,6 +95,13 @@ $blue: #6692B4
 
   #spotlight
     overflow: hidden
+    background-color: white
+    transition: background 0.5s linear
+    transition: all .25s ease-out
+    &:hover
+      background-color: transparentize($green, .15)
+      // box-shadow: -5px 10px 5px black
+      // transform: translate(.75em, -.65em)
     .primary-content
       position: relative
       transform: translate3d(0,0,0)
@@ -112,6 +119,7 @@ $blue: #6692B4
     &:hover .secondary-content
       transform: translate3d(0, -18em, 0)
       transition: all .75s ease-out
+      color: white
     h3
       margin-top: 0
       margin-bottom: .2em
@@ -135,6 +143,7 @@ $blue: #6692B4
     background:
       image: linear-gradient(to top right, rgba(0, 25, 128, 0.5), rgba(128, 25, 0, 0.75)), linear-gradient(rgba(0, 0, 255, 0.25) 100%, transparent), url('../assets/images/code-image.png')
       position: bottom center
+      attachment: fixed
     color: white
     position: relative
     z-index: 3
