@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Jura:300|Oxygen:300|Philosopher|Roboto:100" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <!-- break-->
   </head>
   <body>
@@ -46,34 +47,67 @@
         </div>
       </div>
       <div id="content-container" class="container-fluid">
-        <div class="row content-rows top-row wrapper">
-          <div id="study" class="col-sm-5 col-md-5 tile">
-            <h1>Case Study</h1>
-          </div>
-          <div id="projects" class="col-sm-3 col-md-3 tile">
-            <h1>Projects</h1>
-          </div>
-          <div id="spotlight" class="col-sm-4 col-md-4 tile">
-            <div class="primary-content text-center">
-              <h2>Project Spotlight</h2><img src="./assets/images/Gametree.png" id="gametree">
-              <h4>Gametree.me &mdash; Discover Your Tribe</h4>
+        <div class="row top-row wrapper">
+          <div id="spotlight" class="col-sm-12 col-md-4 tile">
+            <div class="primary-content">
+              <h2 class="text-uppercase">Project Spotlight</h2><img src="./assets/images/Gametree.png" id="gametree" class="align-center image-padding img-responsive">
+              <h4 class="text-uppercase title-padding">Gametree.me &mdash; Discover Your Tribe</h4>
+              <p class="text-justify">Gametree.me is a social network offering amazingly personal recommendations for games, friends, news, and events. </p>
             </div>
             <div class="secondary-content">
               <h3>A Gamer Network for the Masses</h3>
-              <p class="text-justify">Gametree.me is a social network offering amazingly personal recommendations for games, friends, news, and events. We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.</p><br>
+              <p class="text-justify">We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.</p>
+              <div class="row">
+                <div class="col-sm-3 col-md-3"><i class="devicon-meteor-plain colored dev-icon"></i></div>
+                <div class="col-sm-3 col-md-3"><i class="devicon-sass-original colored dev-icon"></i></div>
+                <div class="col-sm-3 col-md-3"><i class="devicon-coffeescript-original-wordmark colored dev-icon"></i></div>
+                <div class="col-sm-3 col-md-3"><i class="devicon-html5-plain-wordmark dev-icon"></i></div>
+              </div><br>
               <p>
                  
                 Learn more &mdash; find your tribe. <a href="http://gametree.me"><i aria-hidden="true" class="fa fa-arrow-circle-right fa-lg"></i></a>
               </p>
             </div>
           </div>
-        </div>
-        <div id="hidden" class="row">
-          <div class="col-sm-12 col-md-12">
-            <h1>Case study Overview</h1>
+          <div id="projects" class="col-sm-6 col-md-3 tile">
+            <h2 class="text-uppercase">Projects</h2>
+          </div>
+          <div id="study" class="col-sm-6 col-md-5 tile">
+            <h2 class="text-uppercase">Case Study</h2>
+            <p class="text-justify">Summary<br>Dr. Mishra was looking to give his business website a face lift. The current website was created in 2011 and contains a large amount of content. The overall feel of the current website was dated and and not mobile responsive.<img src="./assets/images/dental-image.jpg" class="dental-site align-center image-padding img-responsive"><a href="#" class="show_hide"><i aria-hidden="true" class="fa fa-chevron-down fa-2x align-center"></i></a></p>
           </div>
         </div>
-        <div id="services" class="row content-rows">
+        <div id="study-section" class="row">
+          <div class="wrapper">
+            <div class="col-sm-12 col-md-12 text-justify">
+              <h3>Case Study Overview</h3>
+              <div class="row">
+                <div id="challenge" class="col-sm-6 col-md-4 study-sections">
+                  <h4>The Challenge</h4>
+                  <p>
+                     
+                    The decision to update the website was clear. The challenge came when looking at the overall design. Looking at competitor site, we needed to make sure that the new design was modern, but not too overpowering.
+                  </p>
+                </div>
+                <div id="solution" class="col-sm-6 col-md-4 study-sections">
+                  <h4>The Solution</h4>
+                  <p>
+                     
+                    The new design for the website was changed to be a single page site. The decision was made in order to provide something succinct and appealing to new customer as well as current ones. Mobile responsiveness was also a priority. <img src="./assets/images/front-page.jpg" class="align-center image-padding img-responsive">
+                  </p>
+                </div>
+                <div id="result" class="col-sm-12 col-md-4 study-sections">
+                  <h4>The Result</h4>
+                  <p>
+                     
+                    A new feature was added that allowed new patients to complete forms online. The goal of having this feature was to expedite the processing of patients thereby decreasing the idle time at the office. This single page layout also put the contact form front and center making it easier to locate. The responsive design also translated to a better user experience when viewing the site on a mobile device.<img src="./assets/images/contact-section.jpg" class="align-center image-padding img-responsive">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="services" class="row">
           <div class="wrapper">
             <div class="col-sm-12 col-md-12 tile">
               <h2>Helping you Soar</h2>
@@ -84,8 +118,7 @@
                 <p class="text-justify lead"><img src="./assets/images/Develop.png" class="service-imgs"><span class="lead-word">Develop</span><br>&mdash; Whether you are looking to give your website a small facelift, a total gut job, or are looking to develop a new web application, I am here to help you bring your idea into fruition.</p>
               </div>
               <div class="col-md-4 services-section">
-                <p class="text-justify lead"><img src="./assets/images/Rocket.png" class="service-imgs"><span class="lead-word">Launch</span><br>&mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.
-                </p>
+                <p class="text-justify lead"><img src="./assets/images/Rocket.png" class="service-imgs"><span class="lead-word">Launch</span><br>&mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.</p>
               </div>
             </div>
           </div>

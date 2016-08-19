@@ -12,6 +12,7 @@ html(lang="en")
     link(rel='stylesheet' href='./styles/styles.min.css')
     link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Jura:300|Oxygen:300|Philosopher|Roboto:100" rel="stylesheet")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css")
     // break
   body
     .container-fluid#main-container
@@ -48,28 +49,60 @@ html(lang="en")
                     i.fa.fa-arrow-circle-right(aria-hidden='true')
 
       .container-fluid#content-container
-        .row.content-rows.top-row.wrapper
-          .col-sm-5.col-md-5.tile#study
-            h1 Case Study
-          .col-sm-3.col-md-3.tile#projects
-            h1 Projects
-          .col-sm-4.col-md-4.tile#spotlight
-            .primary-content.text-center
-              h2 Project Spotlight
-              img(src='./assets/images/Gametree.png' id='gametree')
-              h4 Gametree.me &mdash; Discover Your Tribe
+        .row.top-row.wrapper
+          .col-sm-12.col-md-4.tile#spotlight
+            .primary-content
+              h2.text-uppercase Project Spotlight
+              img.align-center.image-padding.img-responsive(src='./assets/images/Gametree.png' id='gametree')
+              h4.text-uppercase.title-padding Gametree.me &mdash; Discover Your Tribe
+              p.text-justify Gametree.me is a social network offering amazingly personal recommendations for games, friends, news, and events. 
             .secondary-content
               h3 A Gamer Network for the Masses
-              p.text-justify Gametree.me is a social network offering amazingly personal recommendations for games, friends, news, and events. We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.
+              p.text-justify We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.
+              .row
+                .col-sm-3.col-md-3
+                  i.devicon-meteor-plain.colored.dev-icon
+                .col-sm-3.col-md-3
+                  i.devicon-sass-original.colored.dev-icon
+                .col-sm-3.col-md-3
+                  i.devicon-coffeescript-original-wordmark.colored.dev-icon
+                .col-sm-3.col-md-3
+                  i.devicon-html5-plain-wordmark.dev-icon
               br 
               p 
                 | Learn more &mdash; find your tribe. 
                 a(href="http://gametree.me")
                   i.fa.fa-arrow-circle-right.fa-lg(aria-hidden='true')
-        .row#hidden
-          .col-sm-12.col-md-12
-            h1 Case study Overview
-        .row.content-rows#services
+          .col-sm-6.col-md-3.tile#projects
+            h2.text-uppercase Projects
+          .col-sm-6.col-md-5.tile#study
+            h2.text-uppercase Case Study
+            p.text-justify Summary
+              br
+              | Dr. Mishra was looking to give his business website a face lift. The current website was created in 2011 and contains a large amount of content. The overall feel of the current website was dated and and not mobile responsive.
+              img.dental-site.align-center.image-padding.img-responsive(src='./assets/images/dental-image.jpg')
+              a.show_hide(href='#')
+                i.fa.fa-chevron-down.fa-2x.align-center(aria-hidden='true')
+        .row#study-section
+          .wrapper
+            .col-sm-12.col-md-12.text-justify
+              h3 Case Study Overview
+              .row
+                .col-sm-6.col-md-4.study-sections#challenge
+                  h4 The Challenge
+                  p 
+                   | The decision to update the website was clear. The challenge came when looking at the overall design. Looking at competitor site, we needed to make sure that the new design was modern, but not too overpowering.
+                .col-sm-6.col-md-4.study-sections#solution
+                  h4 The Solution
+                  p 
+                    | The new design for the website was changed to be a single page site. The decision was made in order to provide something succinct and appealing to new customer as well as current ones. Mobile responsiveness was also a priority. 
+                    img.align-center.image-padding.img-responsive(src='./assets/images/front-page.jpg')
+                .col-sm-12.col-md-4.study-sections#result
+                  h4 The Result
+                  p 
+                    | A new feature was added that allowed new patients to complete forms online. The goal of having this feature was to expedite the processing of patients thereby decreasing the idle time at the office. This single page layout also put the contact form front and center making it easier to locate. The responsive design also translated to a better user experience when viewing the site on a mobile device.
+                    img.align-center.image-padding.img-responsive(src='./assets/images/contact-section.jpg')
+        .row#services
           .wrapper
             .col-sm-12.col-md-12.tile
               h2 Helping you Soar
@@ -93,7 +126,7 @@ html(lang="en")
                   span(class='lead-word') Launch
                   br 
                   | &mdash; Once your website/app has been developed and coded, I will ensure that your project is lauched and implemented properly.
-                  //- img(src='./assets/images/Rocket.png' class='services-img')
+                  
         .row
           .wrapper
             .end-content

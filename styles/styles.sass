@@ -7,6 +7,28 @@ $blue: #6692B4
   left: 50%
   transform: translateX(-50%)
 
+.dev-icon
+  font-size: 3em
+  text-align: center
+  border: 3px solid white
+    radius: 3em
+  padding: .25em
+
+.image-padding
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+
+p
+  line-height: 1.5em
+  padding-top: .75em
+  padding-bottom: 1em
+  font-size: 1.2em
+  margin: 0
+
+.title-padding
+  margin-top: 1.5em
+  margin-bottom: 0px
+
 #hidden
   display: none
 .row
@@ -46,7 +68,7 @@ $blue: #6692B4
       border: solid white .25em
       padding: .7em .5em
       background-color: transparent
-      box-shadow: 0px 0px 10px 1px $green
+      box-shadow: 0px 0px 5px 1px $green
     p
       color: $green
       font-family: 'Alegreya Sans SC', sans-serif
@@ -88,53 +110,74 @@ $blue: #6692B4
   color: $blue
   .top-row
     .tile
-      padding-top: 2em
-      padding-bottom: 3.5em
-      min-height: 25em
-  .content-rows
+      padding-top: 2.5em
+      padding-bottom: 1.5em
+      min-height: 46em
+      font-family: 'Oxygen', sans-serif
 
-  #spotlight
-    overflow: hidden
-    background-color: white
-    transition: background 0.5s linear
-    transition: all .25s ease-out
-    &:hover
-      background-color: transparentize($green, .15)
-      // box-shadow: -5px 10px 5px black
-      // transform: translate(.75em, -.65em)
-    .primary-content
-      position: relative
-      transform: translate3d(0,0,0)
-      transition: all .75s ease-out
-      img
-        width: 90%
-    &:hover .primary-content
-      transform: translate3d(-150%, 0, 0)
-      transition: all .75s ease-out
-    .secondary-content
-      position: absolute
-      padding: 1.5em 1.5em
-      transform: translate3d(0,300%,0)
-      transition: all .75s ease-out
-    &:hover .secondary-content
-      transform: translate3d(0, -18em, 0)
-      transition: all .75s ease-out
-      color: white
-    h3
-      margin-top: 0
-      margin-bottom: .2em
-    #gametree
-      border-radius: 5px
-      border: 1px solid black
+    #spotlight
+      overflow: hidden
+      background-color: white
+      transition: background 0.5s linear
+      transition: all .25s ease-out
       &:hover
+        background-color: transparentize($green, .15)
+        // box-shadow: -5px 10px 5px black
+        // transform: translate(.75em, -.65em)
+      .primary-content
+        position: relative
+        transform: translate3d(0,0,0)
+        transition: all .75s ease-out
+      &:hover .primary-content
+        transform: translate3d(-150%, 0, 0)
+        transition: all .75s ease-out
+      .secondary-content
+        position: absolute
+        padding: 1.5em 2.5em
+        transform: translate3d(0,300%,0)
+        transition: all .75s ease-out
+      &:hover .secondary-content
+        transform: translate3d(0, -110%, 0)
+        transition: all .75s ease-out
+        color: white
+        p
+          padding-top: 1em
+          padding-bottom: 2em
+      #gametree
+        border-radius: 5px
+        border: 1px solid black
 
-  .tile
-    font-family: 'Oxygen', sans-serif
-  #projects
-    background-color: $purple
-  // .tile#services
-  //   padding-top: 2.5em
-  //   padding-bottom: 4.5em
+    #projects
+      background-color: $purple
+
+    #study
+      position: relative
+      .dental-site
+        border: .5px solid gray
+          radius: 10px
+        box-shadow: 0px 18px 35px -15px rgba(31, 31, 78, 0.80)
+      .fa
+        position: absolute
+        bottom: .5em
+
+  #study-section
+    background-color: rgb(255, 200, 0)
+    padding-top: 2.5em
+    padding-bottom: 2.5em
+    border-top: 2px solid
+    .study-sections
+      opacity: 0
+      transition: all 0.3s ease-in-out
+      p
+        position: relative
+        min-height: 32em
+        // line-height: 1.7em
+      img
+        position: absolute
+        bottom: 0em
+        margin: .5em auto
+        border: 1px solid white
+          radius: .25em
   #services
     margin: 0
     padding-top: 1.75em
@@ -197,6 +240,7 @@ $blue: #6692B4
       z-index: 3
     .form-control
       background-color: transparent
+
 footer
   padding: 1em 2em
   background-color: $purple
@@ -208,6 +252,7 @@ footer
   #video
     .hero-content
       top: 45vh
+      left: 17%
       h1
         font-size: 2.25em
       h2
@@ -259,11 +304,28 @@ footer
   #content-container
     .end-content .title
       font-size: 5em
-
+@media screen and (max-width: 991px)
+  #content-container
+    .top-row
+      .tile
+        min-height: 44em
+      #spotlight
+        min-height: 30em
+      #study
+        border-top: 2px solid
+    #study-section
+      #result, #challenge, #solution
+        border-top: 2px solid white
+        padding-top: 1.75em
+        padding-bottom: 1.75em
+        p
+          min-height: 30em
+          img
+            bottom: 3em
 @media screen and (min-width: 1020px)
   #content-container
-    .top-row .tile
-      min-height: 30em
+    // .top-row .tile
+    //   min-height: 30em
     .end-content .title
       font-size: 6.75em
       top: 1.7em
