@@ -2,6 +2,19 @@ $purple: #444499
 $green: #76C947
 $blue: #6692B4
 
+.main-title
+  font-family: 'Oxygen', sans-serif
+.secondary-title
+  font-family: 'Josefin Slab', serif
+p
+  line-height: 1.5em
+  padding-top: .75em
+  padding-bottom: 1em
+  font-size: 1.2em
+  margin: 0
+  font-family: 'Josefin Sans', sans-serif
+  // font-family: 'Assistant', sans-serif
+
 .align-center
   position: relative
   left: 50%
@@ -17,13 +30,6 @@ $blue: #6692B4
 .image-padding
   margin-top: 1.5em
   margin-bottom: 1.5em
-
-p
-  line-height: 1.5em
-  padding-top: .75em
-  padding-bottom: 1em
-  font-size: 1.2em
-  margin: 0
 
 .title-padding
   margin-top: 1.5em
@@ -112,7 +118,7 @@ p
     .tile
       padding-top: 2.5em
       padding-bottom: 1.5em
-      min-height: 46em
+      min-height: 45em
       font-family: 'Oxygen', sans-serif
 
     #spotlight
@@ -136,6 +142,7 @@ p
         padding: 1.5em 2.5em
         transform: translate3d(0,300%,0)
         transition: all .75s ease-out
+        left: 0
       &:hover .secondary-content
         transform: translate3d(0, -110%, 0)
         transition: all .75s ease-out
@@ -161,17 +168,20 @@ p
         bottom: .5em
 
   #study-section
-    background-color: rgb(255, 200, 0)
+    background-color: rgba(255, 218, 84, 0.8)
     padding-top: 2.5em
     padding-bottom: 2.5em
     border-top: 2px solid
     .study-sections
       opacity: 0
       transition: all 0.3s ease-in-out
+      h4
+        border-left: 3px solid white
+        padding: .25em
       p
         position: relative
-        min-height: 32em
-        // line-height: 1.7em
+        min-height: 31em
+        padding-top: 0em
       img
         position: absolute
         bottom: 0em
@@ -231,9 +241,11 @@ p
       z-index: -1
     // #About
     //   top: 49.5%
+    #hello
+      font-size: 2.75em
     p
       position: relative
-      padding: 1.3em 0em
+      padding: 1em 0em
       font-size: 1.1em
     #contactForm
       position: relative
@@ -308,7 +320,7 @@ footer
   #content-container
     .top-row
       .tile
-        min-height: 44em
+        min-height: 44.5em
       #spotlight
         min-height: 30em
       #study
@@ -322,6 +334,8 @@ footer
           min-height: 30em
           img
             bottom: 3em
+          #partial-img
+            bottom: -1.5em
 @media screen and (min-width: 1020px)
   #content-container
     // .top-row .tile

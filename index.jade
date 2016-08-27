@@ -8,9 +8,13 @@ html(lang="en")
     // break
     title Luis Gaytan | Lead Dodo
     // break
+    //- bootstrap
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous')
+    //- text
+    link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Josefin+Sans|Josefin+Slab|Oxygen:300" rel="stylesheet")
+    
     link(rel='stylesheet' href='./styles/styles.min.css')
-    link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Jura:300|Oxygen:300|Philosopher|Roboto:100" rel="stylesheet")
+
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
     link(rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css")
     // break
@@ -60,13 +64,13 @@ html(lang="en")
               h3 A Gamer Network for the Masses
               p.text-justify We used Meteor.js to create this innovative application. We integrated some of the latest frameworks and platforms to bring this social gaming network to life.
               .row
-                .col-sm-3.col-md-3
+                .col-xs-3.col-sm-3.col-md-3
                   i.devicon-meteor-plain.colored.dev-icon
-                .col-sm-3.col-md-3
+                .col-xs-3.col-sm-3.col-md-3
                   i.devicon-sass-original.colored.dev-icon
-                .col-sm-3.col-md-3
+                .col-xs-3.col-sm-3.col-md-3
                   i.devicon-coffeescript-original-wordmark.colored.dev-icon
-                .col-sm-3.col-md-3
+                .col-xs-3.col-sm-3.col-md-3
                   i.devicon-html5-plain-wordmark.dev-icon
               br 
               p 
@@ -74,7 +78,17 @@ html(lang="en")
                 a(href="http://gametree.me")
                   i.fa.fa-arrow-circle-right.fa-lg(aria-hidden='true')
           .col-sm-6.col-md-3.tile#projects
-            h2.text-uppercase Projects
+            .row
+              h2.text-uppercase Projects
+              .vp-notes.col-md-4
+                img.align-center.image-padding.img-responsive(src='./assets/images/VP-Notes.jpg')
+                p Note taking application designed to expedite note writing and verification for Valley Prep Tutoring.
+              .ACT-site.col-md-4
+                img.align-center.image-padding.img-responsive(src='./assets/images/ACT-Website.jpg')
+                p American Crew Transportation website redesign with a focus on mobile optimization.
+              .vp-notes.col-md-4
+                img.align-center.image-padding.img-responsive(src='./assets/images/VP-Notes.jpg')
+                p Note taking application designed to expedite note writing and verification for Valley Prep Tutoring.
           .col-sm-6.col-md-5.tile#study
             h2.text-uppercase Case Study
             p.text-justify Summary
@@ -86,26 +100,27 @@ html(lang="en")
         .row#study-section
           .wrapper
             .col-sm-12.col-md-12.text-justify
-              h3 Case Study Overview
+              h3.main-title Case Study Overview
               .row
                 .col-sm-6.col-md-4.study-sections#challenge
-                  h4 The Challenge
+                  h4.secondary-title The Challenge
                   p 
                    | The decision to update the website was clear. The challenge came when looking at the overall design. Looking at competitor site, we needed to make sure that the new design was modern, but not too overpowering.
+                   img.align-center.image-padding.img-responsive#partial-img(src='./assets/images/partial-dental-site.jpg')
                 .col-sm-6.col-md-4.study-sections#solution
-                  h4 The Solution
+                  h4.secondary-title The Solution
                   p 
                     | The new design for the website was changed to be a single page site. The decision was made in order to provide something succinct and appealing to new customer as well as current ones. Mobile responsiveness was also a priority. 
-                    img.align-center.image-padding.img-responsive(src='./assets/images/front-page.jpg')
+                    img.align-center.image-padding.img-responsive(src='./assets/images/Dental-Hero-Section.jpg')
                 .col-sm-12.col-md-4.study-sections#result
-                  h4 The Result
+                  h4.secondary-title The Result
                   p 
                     | A new feature was added that allowed new patients to complete forms online. The goal of having this feature was to expedite the processing of patients thereby decreasing the idle time at the office. This single page layout also put the contact form front and center making it easier to locate. The responsive design also translated to a better user experience when viewing the site on a mobile device.
-                    img.align-center.image-padding.img-responsive(src='./assets/images/contact-section.jpg')
+                    img.align-center.image-padding.img-responsive(src='./assets/images/Dental-Contact-Section.jpg')
         .row#services
           .wrapper
             .col-sm-12.col-md-12.tile
-              h2 Helping you Soar
+              h2.main-title Helping you Soar
               .col-md-4.services-section
                 p(class='text-justify lead')
                   img(src='./assets/images/Full-Stack.png' class='service-imgs')
@@ -135,6 +150,7 @@ html(lang="en")
                   | About 
                   br
                   | Me
+                span(id='hello') Hello.
                 p(class='text-justify') 
                   | My name is Luis Gaytan. I am a fullstack web developer currently based in Southern California. I take pride in developing innovative and highly functional products that will solve your techinal needs.
                   br
