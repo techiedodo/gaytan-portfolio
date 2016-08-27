@@ -117,8 +117,8 @@ p
   .top-row
     .tile
       padding-top: 2.5em
-      padding-bottom: 1.5em
-      min-height: 45em
+      padding-bottom: 2.5em
+      min-height: 36em
       font-family: 'Oxygen', sans-serif
 
     #spotlight
@@ -159,19 +159,27 @@ p
 
     #study
       position: relative
-      .dental-site
-        border: .5px solid gray
-          radius: 10px
-        box-shadow: 0px 18px 35px -15px rgba(31, 31, 78, 0.80)
+      #study-images
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+        .dental-site
+          border: .5px solid gray
+            radius: 10px
+          box-shadow: 0px 18px 35px -15px rgba(31, 31, 78, 0.80)
       .fa
         position: absolute
         bottom: .5em
-
+  #case-study
+    border-bottom: 2px solid
+    background-color: rgba(125, 139, 160, 0.4)
   #study-section
     background-color: rgba(255, 218, 84, 0.8)
     padding-top: 2.5em
     padding-bottom: 2.5em
-    border-top: 2px solid
+    border-bottom: 2px solid $green
+    box-shadow: 0px 8px 10px gray
     .study-sections
       opacity: 0
       transition: all 0.3s ease-in-out
@@ -239,8 +247,6 @@ p
       text-transform: uppercase
       margin: 0
       z-index: -1
-    // #About
-    //   top: 49.5%
     #hello
       font-size: 2.75em
     p
@@ -318,13 +324,6 @@ footer
       font-size: 5em
 @media screen and (max-width: 991px)
   #content-container
-    .top-row
-      .tile
-        min-height: 44.5em
-      #spotlight
-        min-height: 30em
-      #study
-        border-top: 2px solid
     #study-section
       #result, #challenge, #solution
         border-top: 2px solid white
