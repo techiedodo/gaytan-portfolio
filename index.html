@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- break-->
+    <meta name="author" content="Luis Gaytan">
+    <meta name="description" content="At TechieDodo, I will help you create products that your customers will enjoy using. Adapt &amp; Fly.">
     <title>Luis Gaytan | Lead Dodo</title>
-    <!-- break-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Josefin+Sans|Josefin+Slab|Oxygen:300" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-    <!-- break-->
   </head>
   <body>
     <div id="main-container" class="container-fluid">
@@ -72,11 +71,14 @@
           <div id="projects" class="col-sm-7 col-md-7 tile">
             <div class="row">
               <h2 class="text-uppercase">Projects</h2>
-              <div class="vp-notes col-sm-6 col-md-6"><img src="./assets/images/VP-Notes.jpg" class="align-center image-padding img-responsive">
-                <p>Note taking application designed to expedite note writing and verification for Valley Prep Tutoring.</p>
+              <div class="vp-notes col-xs-6 col-sm-6 col-md-6"><a href="https://vp-notes.herokuapp.com/"><img src="./assets/images/VP-Notes.jpg" class="img-responsive"></a>
+                <p>
+                   
+                  Note taking application designed to expedite note writing and verification for Valley Prep Tutoring. <br>Ruby on Rails project hosted on Heroku.
+                </p>
               </div>
-              <div class="ACT-site col-sm-6 col-md-6"><img src="./assets/images/ACT-Website.jpg" class="align-center image-padding img-responsive">
-                <p>American Crew Transportation website redesign with a focus on mobile optimization.</p>
+              <div class="ACT-site col-xs-6 col-sm-6 col-md-6"><img src="./assets/images/ACT-Web.jpg" class="img-responsive">
+                <p>American Crew Transportation website redesign with a focus on mobile optimization. Redesign in progress.</p>
               </div>
             </div>
           </div>
@@ -101,37 +103,52 @@
           <div class="wrapper">
             <div id="study" class="col-md-12 tile">
               <h2 class="text-uppercase">Case Study</h2>
-              <p class="text-justify">Summary<br>Dr. Mishra was looking to give his business website a face lift. The current website was created in 2011 and contains a large amount of content. The overall feel of the current website was dated and and not mobile responsive.
-                <div id="study-images"><img src="./assets/images/dental-image.jpg" class="dental-site image-padding img-responsive"><img src="./assets/images/dental-image-services.jpg" class="dental-site image-padding img-responsive"></div><a href="#" class="show_hide"><i aria-hidden="true" class="fa fa-chevron-down fa-2x align-center"></i></a>
+              <p class="text-justify">Summary<br>Dr. Mishra was looking to give his business website, <a href="http://www.chatsworthdentalgroup.com/">Chatsworth Dental Group, </a>a face lift. The current website was created in 2011 and contained a large amount of content. The overall feel of the website was dated and not mobile responsive. Looking at the his competitor's websites, Dr. Mishra wanted to ensure that his new site stood out.
+                <div id="study-images"><img src="./assets/images/dental-image.jpg" class="dental-site image-padding img-responsive"><img id="img-hide" src="./assets/images/dental-image-services.jpg" class="dental-site image-padding img-responsive"></div><a href="#" class="show_hide"><i aria-hidden="true" class="fa fa-chevron-down fa-2x align-center"></i></a>
               </p>
             </div>
           </div>
         </div>
-        <div id="study-section" class="row">
-          <div class="wrapper">
-            <div class="col-sm-12 col-md-12 text-justify">
-              <h3 class="main-title">Case Study Overview</h3>
-              <div class="row">
-                <div id="challenge" class="col-sm-6 col-md-4 study-sections">
-                  <h4 class="secondary-title">The Challenge</h4>
-                  <p>
-                     
-                    The decision to update the website was clear. The challenge came when looking at the overall design. Looking at competitor site, we needed to make sure that the new design was modern, but not too overpowering.<img id="partial-img" src="./assets/images/partial-dental-site.jpg" class="align-center image-padding img-responsive">
-                  </p>
+        <div id="study-section">
+          <div class="wrapper text-justify">
+            <h3 class="main-title">Case Study Overview</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-sm-6 col-md-6 study-sections">
+                  <div id="challenge">
+                    <h4 class="secondary-title text-uppercase">The Challenge</h4>
+                    <p>
+                       
+                      The decision to update the website was clear. The challenge came when looking at the overall design. Looking at competitor sites, we needed to make sure that the new design was modern, but not too overpowering.<img src="./assets/images/old-dental-site.jpg" class="align-center image-padding img-responsive">
+                    </p>
+                  </div>
                 </div>
-                <div id="solution" class="col-sm-6 col-md-4 study-sections">
-                  <h4 class="secondary-title">The Solution</h4>
-                  <p>
-                     
-                    The new design for the website was changed to be a single page site. The decision was made in order to provide something succinct and appealing to new customer as well as current ones. Mobile responsiveness was also a priority. <img src="./assets/images/Dental-Hero-Section.jpg" class="align-center image-padding img-responsive">
-                  </p>
+                <div class="col-sm-6 col-md-6 study-sections">
+                  <div id="solution">
+                    <h4 class="secondary-title text-uppercase">The Solution</h4>
+                    <p>
+                       
+                      The new design for the website was a single page site. The aim was to provide something succinct and appealing to new customer as well as current ones. Mobile responsiveness was a priority. <img src="./assets/images/dental-site.jpg" class="align-center image-padding img-responsive">
+                    </p>
+                  </div>
                 </div>
-                <div id="result" class="col-sm-12 col-md-4 study-sections">
-                  <h4 class="secondary-title">The Result</h4>
-                  <p>
-                     
-                    A new feature was added that allowed new patients to complete forms online. The goal of having this feature was to expedite the processing of patients thereby decreasing the idle time at the office. This single page layout also put the contact form front and center making it easier to locate. The responsive design also translated to a better user experience when viewing the site on a mobile device.<img src="./assets/images/Dental-Contact-Section.jpg" class="align-center image-padding img-responsive">
-                  </p>
+              </div>
+              <div class="col-md-12">
+                <div class="col-sm-12 col-md-12 study-sections">
+                  <div id="result">
+                    <h4 class="secondary-title text-uppercase">The Result</h4>
+                    <p>
+                       
+                      The page was divided into four section: hero, services, staff, and new patients. The main goal was to keep the site fresh with a focus on appealing to new customers.
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-3"><img src="./assets/images/hero.png" class="align-center image-padding img-responsive"></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><img src="./assets/images/services.png" class="align-center image-padding img-responsive"></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><img src="./assets/images/staff.png" class="align-center image-padding img-responsive"></div>
+                        <div class="col-xs-6 col-sm-3 col-md-3"><img src="./assets/images/end-contact.png" class="align-center image-padding img-responsive"></div>
+                      </div><br>
+                    </p>
+                    <p>The "New Patient Forms" feature allows new patients to complete forms online in order to expedite processing thereby decreasing idle time at the office. Streamlining patient forms is aimed at improving guest service. This single page layout placed the Contact Form front and center making it easier to locate and use. The responsive design translated to a better user experience when viewing on a mobile device.<img src="./assets/images/new-and-contact.jpg" class="align-center image-padding img-responsive"></p>
+                  </div>
                 </div>
               </div>
             </div>

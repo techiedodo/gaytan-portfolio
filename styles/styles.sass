@@ -2,6 +2,7 @@ $purple: #444499
 $green: #76C947
 $blue: #6692B4
 
+// site wide fonts and sizes
 .main-title
   font-family: 'Oxygen', sans-serif
 .secondary-title
@@ -13,40 +14,37 @@ p
   font-size: 1.2em
   margin: 0
   font-family: 'Josefin Sans', sans-serif
-  // font-family: 'Assistant', sans-serif
-
+// site wide tools and formats
 .align-center
   position: relative
   left: 50%
   transform: translateX(-50%)
-
 .dev-icon
   font-size: 3em
   text-align: center
   border: 3px solid white
     radius: 3em
   padding: .25em
-
 .image-padding
   margin-top: 1.5em
   margin-bottom: 1.5em
-
 .title-padding
   margin-top: 1.5em
   margin-bottom: 0px
-
-#hidden
-  display: none
 .row
   margin-left: 0
   margin-right: 0
 .container-fluid
   padding: 0
+#hidden
+  display: none
 #header-rows
   margin: 0
 .wrapper
   max-width: 1350px
   margin: 0 auto
+
+// sections specific formats
 #video
   position: relative
   width: 100vw
@@ -118,7 +116,7 @@ p
     .tile
       padding-top: 2.5em
       padding-bottom: 2.5em
-      min-height: 36em
+      min-height: 37.5em
       font-family: 'Oxygen', sans-serif
 
     #spotlight
@@ -151,11 +149,20 @@ p
           padding-top: 1em
           padding-bottom: 2em
       #gametree
-        border-radius: 5px
+        border-radius: 2px
         border: 1px solid black
 
     #projects
       background-color: $purple
+      img
+        transition: all .3s ease-out
+        border-radius: 2px
+        margin: 0 auto
+        margin-top: 1em
+        &:hover
+          transform: translateY(-5px)
+          transition: all .3s ease-out
+          box-shadow: 0px 5px 10px black
 
     #study
       position: relative
@@ -180,20 +187,21 @@ p
     padding-bottom: 2.5em
     border-bottom: 2px solid $green
     box-shadow: 0px 8px 10px gray
+    h3
+      padding: 0 .5em
+      color: white
     .study-sections
       opacity: 0
       transition: all 0.3s ease-in-out
       h4
-        border-left: 3px solid white
-        padding: .25em
+        border-left: 3px solid #6692B4
+        padding: .35em
+        color: white
       p
         position: relative
-        min-height: 31em
+        // min-height: 31em
         padding-top: 0em
       img
-        position: absolute
-        bottom: 0em
-        margin: .5em auto
         border: 1px solid white
           radius: .25em
   #services
@@ -270,13 +278,13 @@ footer
   #video
     .hero-content
       top: 45vh
-      left: 17%
+      // left: 17%
       h1
         font-size: 2.25em
       h2
         font-size: 1.25em
 
-@media screen and (max-width: 500px)
+@media screen and (min-width: 321px) and (max-width: 500px)
   .wrapper
     max-width: 100%
   #logo-sect #logo
@@ -303,8 +311,16 @@ footer
       font-size: 4em
 
 @media screen and (max-width: 321px)
+  p
+    font-size: 1em
   #social-media
-    left: -44%
+    left: -44% !important
+  #content-container
+    .top-row
+      .tile
+        padding-top: 1em
+        padding-bottom: 1em
+        min-height: 26.5em
 
 @media screen and (min-width: 501px) and (max-width: 737px)
   .wrapper
@@ -316,25 +332,24 @@ footer
     #social-media
       position: absolute
 
+@media screen and (min-width: 321px) and (max-width: 737px)
+  #content-container
+    .top-row
+      .tile
+        padding-top: 1.5em
+        padding-bottom: 1.5em
+        min-height: 32.5em
+    #case-study
+      #img-hide
+        display: none
+
 @media screen and (min-width: 739px) and (max-width: 1300px)
   .wrapper
     max-width: 100%
   #content-container
     .end-content .title
       font-size: 5em
-@media screen and (max-width: 991px)
-  #content-container
-    #study-section
-      #result, #challenge, #solution
-        border-top: 2px solid white
-        padding-top: 1.75em
-        padding-bottom: 1.75em
-        p
-          min-height: 30em
-          img
-            bottom: 3em
-          #partial-img
-            bottom: -1.5em
+
 @media screen and (min-width: 1020px)
   #content-container
     // .top-row .tile
