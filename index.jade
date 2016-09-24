@@ -201,20 +201,28 @@ html(lang="en")
                   br
                   | Me
                 h3 Let's work together to make a unique product. What's your idea?
-                form#contactForm(method='POST')
+                form#contact-form(method='post', action='contact.php', role='form')
+                  .messages
                   .form-group
-                    //- label(for='nameInputLabel') What's your name?
-                    input.form-control(type='text', name='name', placeholder='Your Name')
+                    label(for='name') Name:
+                    input#ContactName.form-control(type='text', name='name', placeholder='Please enter your name *', required='required', data-error='Please enter name.')
+                    .help-block.with-errors
                   .form-group
-                    //- label(for='emailInputLabel') Electronic-Mail
-                    input.form-control(type='email', name='_replyto', placeholder='Your E-mail')
+                    label(for='email') Email:
+                    input#ContactEmail.form-control(type='email', name='email', placeholder='Email *', required='required', data-error='Please enter email.')
+                    .help-block.with-errors
                   .form-group
-                    textarea.form-control(name='message', placeholder='How can I help you?', rows='3')
-                  input(type='text', name='_gotcha', style='display:none')
+                    textarea#ContactMessage.form-control(name='message', rows='4', placeholder='Enter message/comment *', required='required', data-error='Please leave a message.')
+                    .help-block.with-errors
                   .form-group
-                    button#sendMessage.btn.btn-default(type='submit') Submit
+                    input.btn.btn-primary.btn-sm(type='submit', name='submit', value='Send Message')
+                    p.text-muted
+                      strong *
+                      |  These fields are required.
       footer
         p(class='text-right') Adapt. Become a Techie Dodo | &copy; 2016 
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
   script(src="./scripts/main.js")
+  script(src="./scripts/validator.js")
+  script(src="./scripts/contact.js")

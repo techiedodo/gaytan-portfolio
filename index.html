@@ -183,19 +183,25 @@
                   Contact<br>Me
                 </h1>
                 <h3>Let's work together to make a unique product. What's your idea?</h3>
-                <form id="contactForm" method="POST">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                  <div class="messages"></div>
                   <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <label for="name">Name:</label>
+                    <input id="ContactName" type="text" name="name" placeholder="Please enter your name *" required="required" data-error="Please enter name." class="form-control">
+                    <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <input type="email" name="_replyto" placeholder="Your E-mail" class="form-control">
+                    <label for="email">Email:</label>
+                    <input id="ContactEmail" type="email" name="email" placeholder="Email *" required="required" data-error="Please enter email." class="form-control">
+                    <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <textarea name="message" placeholder="How can I help you?" rows="3" class="form-control"></textarea>
+                    <textarea id="ContactMessage" name="message" rows="4" placeholder="Enter message/comment *" required="required" data-error="Please leave a message." class="form-control"></textarea>
+                    <div class="help-block with-errors"></div>
                   </div>
-                  <input type="text" name="_gotcha" style="display:none">
                   <div class="form-group">
-                    <button id="sendMessage" type="submit" class="btn btn-default">Submit</button>
+                    <input type="submit" name="submit" value="Send Message" class="btn btn-primary btn-sm">
+                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
                   </div>
                 </form>
               </div>
@@ -211,4 +217,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="./scripts/main.js"></script>
+  <script src="./scripts/validator.js"></script>
+  <script src="./scripts/contact.js"></script>
 </html>
